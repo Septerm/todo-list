@@ -3,15 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Odin Todo List</title>
 </head>
 <body>
-
     <div class="container">
+        <header>
+            <h1>
+                <svg class="logo">
+                    <use href="./images/view-dashboard.svg"></use>
+                </svg>
+                <span>Todo List</span>
+            </h1>
+        </header>
+        <aside>
+            <nav>
+                <ul id="top-nav" class="side-nav-list">
+                    
+                </ul>
+            </nav>
+
+            <div>
+                <h2 class="project-nav">Projects</h2>
+                <nav>
+                    <ul id="buttom-nav" class="side-nav-list">
+                       
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <main>
+            <div class="main-header">
+            
+            </div>
+            
+            <div class="card-container"></div>
+        </main>
+        <footer>
+            <div>
+                <a href="https://github.com/Septerm/todo-list">
+
+                    <svg>
+                        <use href="./images/github.svg"></use>
+                    </svg>
+                </a>
+                <p> Created Garion Charles</p>
+            </div>
+            
+        </footer>
+
+        <dialog id="my-dialog">
+            <h2>New Project</h2>
+            <form method="dialog">
+                <p>
+                    <label for="projectName">Project Name</label>
+                    <input name="projectName" id="projectName" type="text" required>
+                </p>
+                
+                <input type="submit" id="confirm-btn" value="Confirm">
+            </form>
+            <button commandfor="my-dialog" command="close">Close</button>
+        </dialog>
+
+        <dialog id="my-dialog-2">
+            <h2>New Task</h2>
+            <form method="dialog">
+
+                <p>
+                    <label for="taskTitle">Task Title</label>
+                    <input name="taskTitle" id="taskTitle" type="text" required>
+                </p>
+
+                <p>
+                    <label for="taskDescription">Description</label>
+                    <input name="taskDescription" id="taskDescription" type="text" required>
+                </p>
+
+                <p>
+                    <label for="taskPriority">Priority</label>
+                    <select name="taskPriority" id="taskPriority">
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="taskDueDate">Due Date</label>
+                    <input name="taskDueDate" id="taskDueDate" type="date" required>
+                </p>                
+
+                <input type="submit" id="confirm-btn-2" value="Confirm">
+
+            </form>
+            <button commandfor="my-dialog-2" command="close">Close</button>
+        </dialog>        
 
         
-
     </div>
-    
+   
 </body>
 </html>

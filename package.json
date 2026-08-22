@@ -1,7 +1,7 @@
 {
-  "name": "basic-node-stack-v1",
+  "name": "Todo List Application",
   "version": "1.0.0",
-  "description": "A basic node stack from developing and building web-applications",
+  "description": "A basic todo list app that uses browser storage",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Septerm/Basic-Node-Stack-V1.git"
+    "url": "git+https://github.com/Septerm/todo-list.git"
   },
   "keywords": [],
   "author": "Garion Charles",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Septerm/Basic-Node-Stack-V1/issues"
+    "url": "https://github.com/Septerm/todo-list/issues"
   },
-  "homepage": "https://github.com/Septerm/Basic-Node-Stack-V1#readme",
+  "homepage": "https://github.com/Septerm/todo-list#readme",
   "devDependencies": {
     "css-loader": "^7.1.4",
     "html-loader": "^5.1.0",
